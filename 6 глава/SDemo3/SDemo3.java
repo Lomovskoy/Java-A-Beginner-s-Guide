@@ -3,13 +3,13 @@
 */
 
 class StaticBlock {
-	static double root0f2;
-	static double root0f3;
+	static double rootOf2;
+	static double rootOf3;
 	
 	static {
 		System.out.println("Bнyтpи статического блока");
 		rootOf2 = Math.sqrt(2.0);
-		root0f3 = Math.sqrt(3.0);
+		rootOf3 = Math.sqrt(3.0);
 	}
 	
 	StaticBlock(String msg) {

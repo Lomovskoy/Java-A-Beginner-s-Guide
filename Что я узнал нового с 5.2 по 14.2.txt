@@ -19,7 +19,7 @@
 Задача:
 			
 	int a = 2;
-	int b = 4;
+	int b = null;
 	
 	if(a > 1 || b > a)
 		System.out.print("Первая строка");
