@@ -1,11 +1,18 @@
 /*
-	Простая иерархия классов
+	ПИспользование методов достума для установки и 
+	получения значения закрытых членов
 */
 
 //Класс описывающий двумерные обьекты
 class TwoDShapes{
-	double wdth;
-	double heigth;
+	private double wdth;	//теперь эти переменные
+	private double heigth;	//объявленны как закрытые
+	
+	//Методы доступа к закрытым переменные класса
+	double getWidth(){return wdth;}
+	double getHeight(){return heigth;}
+	void setWidth(double w){wdth = w;}
+	void setHeight(double h){heigth = h;}
 	
 	void showDim(){
 		System.out.println("Ширина и высота - " + 
@@ -19,7 +26,7 @@ class Triangle extends TwoDShapes{
 	String style;
 	
 	double area(){
-		return wdth * heigth / 2;
+		return getWidth() * getHeight() / 2;
 	}
 	
 	void showStyle(){
@@ -27,18 +34,18 @@ class Triangle extends TwoDShapes{
 	}
 }
 	
-class Shapes{
+class Shapes2{
 	
 	public static void main(String args[]) {
 		Triangle t1 = new Triangle();
 		Triangle t2 = new Triangle();
 		
-		t1.wdth = 4.0;
-		t1.heigth = 4.0;
+		t1.setWidth(4.0);
+		t1.setHeight(4.0);
 		t1.style = "закрашенный";
 		
-		t2.wdth = 8.0;
-		t2.heigth = 12.0;
+		t2.setWidth(8.0);
+		t2.setHeight(12.0);
 		t2.style = "контурный";
 		
 		System.out.println("Информация о t1: ");

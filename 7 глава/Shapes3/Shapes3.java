@@ -1,11 +1,17 @@
 /*
-	Простая иерархия классов
+	Добавление конструкторов в класс Triangle
 */
 
 //Класс описывающий двумерные обьекты
 class TwoDShapes{
-	double wdth;
-	double heigth;
+	private double wdth;	//теперь эти переменные
+	private double heigth;	//объявленны как закрытые
+	
+	//Методы доступа к закрытым переменные класса
+	double getWidth(){return wdth;}
+	double getHeight(){return heigth;}
+	void setWidth(double w){wdth = w;}
+	void setHeight(double h){heigth = h;}
 	
 	void showDim(){
 		System.out.println("Ширина и высота - " + 
@@ -18,8 +24,15 @@ class TwoDShapes{
 class Triangle extends TwoDShapes{
 	String style;
 	
+	//Конструктор
+	Triangle(String s, double w, double h){
+		setHeight(w);
+		setWidth(h);
+		style = s;
+	}
+	
 	double area(){
-		return wdth * heigth / 2;
+		return getWidth() * getHeight() / 2;
 	}
 	
 	void showStyle(){
@@ -27,19 +40,11 @@ class Triangle extends TwoDShapes{
 	}
 }
 	
-class Shapes{
+class Shapes3{
 	
 	public static void main(String args[]) {
-		Triangle t1 = new Triangle();
-		Triangle t2 = new Triangle();
-		
-		t1.wdth = 4.0;
-		t1.heigth = 4.0;
-		t1.style = "закрашенный";
-		
-		t2.wdth = 8.0;
-		t2.heigth = 12.0;
-		t2.style = "контурный";
+		Triangle t1 = new Triangle("закрашенный", 4.0, 4.0);
+		Triangle t2 = new Triangle("контурный", 8.0, 12.0);
 		
 		System.out.println("Информация о t1: ");
 		t1.showStyle();
