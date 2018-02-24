@@ -9,7 +9,7 @@ import exceptions.QueueFullException;
  * Добавление обработки исключение в кдласс очереди
  * @author lomov
  */
-public class IQDemo3 {
+public class QExcDemo {
 
     public static void main(String[] args) throws QueueFullException, QueueEmptyException {
         
