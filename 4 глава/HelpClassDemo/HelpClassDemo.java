@@ -44,7 +44,7 @@ class Help{
 					break;
 				case '7':
 					System.out.println("Оператор continue:\n");
-					System.out.println("break; или continue метка;\n");
+					System.out.println("continue; или continue метка;\n");
 					break;
 			}
 		System.out.println();

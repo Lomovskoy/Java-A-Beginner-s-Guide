@@ -1,0 +1,37 @@
+#if
+if(условие){
+    //...
+else {
+    //...
+}
+
+#switch
+switch(выражение){
+    case (константа):
+        //...
+        break;
+    //...
+}
+
+#for
+for(инициализация; условие; операция){
+    //...
+}
+
+#while
+while(условие){
+    //...
+}
+
+#do-while
+do {
+    //...
+}while(условие){
+    //...
+}
+
+#break:
+break; или break метка;
+
+#continue:
+continue; или continue метка;
