@@ -15,8 +15,8 @@ public class Person implements Runnable{
     private String color;
     private String tatement[];
     private Integer random;
-    private Integer min = 100;
-    private Integer max = 1000; 
+    private Integer min = 500;
+    private Integer max = 2000; 
     private Integer time;
     private Integer points;
     private Boolean start;
