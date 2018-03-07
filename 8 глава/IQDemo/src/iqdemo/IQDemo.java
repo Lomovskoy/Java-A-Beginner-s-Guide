@@ -80,6 +80,7 @@ public class IQDemo {
             ch = iQ.get();
             System.out.print(ch);
         }
+        System.out.println();
     }
     
 }
