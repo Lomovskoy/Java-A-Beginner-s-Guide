@@ -1,0 +1,20 @@
+#if
+<html><pre>&nbsp;&nbsp;&nbsp;&nbsp;if(условие){<br>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp//...<br>&nbsp;&nbsp;&nbsp;&nbsp;else {<br>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp//...<br>&nbsp;&nbsp;&nbsp;&nbsp;}</pre></html>
+
+#switch
+<html><pre>switch(выражение){<br>&nbsp;&nbsp;&nbsp;&nbsp;case (константа):<br>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp//...<br>&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp//...}</pre></html>
+
+#for
+<html><pre>for(инициализация; <br>&nbsp;&nbsp;&nbsp;&nbsp;условие; операция){<br>&nbsp;&nbsp;&nbsp;&nbsp//...<br>}</pre></html>
+
+#while
+<html><pre>while(условие){<br>&nbsp;&nbsp;&nbsp;&nbsp//...<br>}</pre></html>
+
+#do-while
+<html><pre>do {<br>&nbsp;&nbsp;&nbsp;&nbsp//...<br>while(условие){<br>&nbsp;&nbsp;&nbsp;&nbsp//...<br>}</pre></html>
+
+#break:
+break; или break метка;
+
+#continue:
+continue; или continue метка;
